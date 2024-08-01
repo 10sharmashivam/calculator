@@ -11,9 +11,13 @@ def calculator(a, b):
         print(a-b)
     elif cal == "*":
         print(a*b)
+    elif cal == "/":
+        if b != 0:
+            print(a/b)
+        else:
+            print("Error value")
     else:
-        print(a//b)
-        
+        print("Invalid syntax")
     
 a = int(input("Enter first number: "))
 b = int(input("Enter second number: "))
